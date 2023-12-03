@@ -190,6 +190,7 @@ app.get('/states/:stateId/stats/', async (request, response) => {
 
   //console.log(stats)
 
+  //Accessing Propertied with Bracket Notations like stats[" "]
   response.send({
     totalCases: stats['SUM(cases)'],
     totalCured: stats['SUM(cured)'],
