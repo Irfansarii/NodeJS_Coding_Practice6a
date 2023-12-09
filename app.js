@@ -75,6 +75,8 @@ app.get('/states/:stateId/', async (request, response) => {
 
 app.post('/districts/', (request, response) => {
   const districtDetails = request.body
+
+  //Object distructuring 
   const {districtName, stateId, cases, cured, active, deaths} = districtDetails
 
   const postUpdateData = `
